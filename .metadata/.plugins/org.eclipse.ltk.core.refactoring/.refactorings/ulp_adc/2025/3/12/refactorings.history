@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ulp_adc/main/ulp/adc.S&apos; to &apos;adc_modified.S&apos;" description="Rename resource &apos;adc.S&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="main/ulp/adc.S" name="adc_modified.S" stamp="1742652808548" updateReferences="true"/>
+</session>

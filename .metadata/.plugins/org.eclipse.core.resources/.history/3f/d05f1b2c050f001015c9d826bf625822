@@ -1,0 +1,67 @@
+/* 	This program will be used as a basic source to build a project with ULP
+	It will start by printing a message before entering into deep sleep
+	It will go into deep sleep  for a defined amount of time
+	After the deep sleep period, it will print a message saying that 
+	deep sleep has finished and will repeat the process again 
+*/
+
+
+#include "esp_err.h"
+#include "esp_sleep.h"
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
+
+#include "example_ulp.h"
+#include "freertos/idf_additions.h"
+#include "ulp_common_defs.h"
+#include "ulp_fsm_common.h"
+
+// The declarations below are important
+extern const uint8_t ulp_example_ulp_bin_start[] asm("_binary_example_ulp_bin_start");
+extern const uint8_t ulp_example_ulp_bin_end[] asm("_binary_example_ulp_bin_end");
+
+
+void app_main(void)
+{
+	vTaskDelay(pdMS_TO_TICKS(1000)); 
+	
+	printf("This is the first line printed");
+	// Let's see why the device is asleep
+	esp_sleep_wakeup_cause_t cause = esp_sleep_get_wakeup_cause();
+	if(cause != ESP_SLEEP_WAKEUP_UNDEFINED){ // If the device is not asleep after a wake up
+		printf("This is a test");
+		printf("Not ULP wakeup\n");
+		if(cause == ESP_SLEEP_WAKEUP_TIMER){
+			printf("The device woke up because of a timer!!");
+		}
+		else{
+			printf("Weird reason for wake up");
+		}
+		// Lets load the ULP program
+		printf("The program will be loaded");
+		esp_err_t err1 = ulp_load_binary(0, ulp_example_ulp_bin_start, (ulp_example_ulp_bin_end - ulp_example_ulp_bin_start)/sizeof(uint32_t));
+		ESP_ERROR_CHECK(err1);
+	}
+	else{ // The device is asleep after a wake up from ulp
+		printf("Woken up by the TIMER");
+	}
+	
+	/* 	##############################################################################
+		At this point you can include configuration sentences for a particular interfaz
+	*/
+	
+	// This function is used to define the period the ULP will read data from sensors
+	// esp_err_t err2 = ulp_set_wakeup_period(0, 5*1000000);
+	
+	// This is used to set a timer wake up defined for the user
+	esp_err_t err3 = esp_sleep_enable_timer_wakeup(60*1000000);
+	ESP_ERROR_CHECK(err3);
+	
+	// Lets run the ulp program
+	esp_err_t err4 = ulp_run(&ulp_entry - RTC_SLOW_MEM);
+	ESP_ERROR_CHECK(err4);
+	// Here the device goes to deep sleep
+	esp_deep_sleep_start();
+}
+

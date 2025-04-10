@@ -1,0 +1,15 @@
+
+
+#include "soc/rtc_cntl_reg.h"
+#include "soc/rtc_io_reg.h"
+#include "soc/soc_ulp.h"
+
+/*	I will read the information of the button every certain period.
+
+*/
+
+	.bss
+
+	.text
+	.global entry
+entry:

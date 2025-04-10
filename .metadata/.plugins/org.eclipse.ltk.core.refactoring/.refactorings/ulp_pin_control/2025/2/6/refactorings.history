@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ulp_pin_control/main/ulp/ulp_program.S&apos; to &apos;ulp_program_high.S&apos;" description="Rename resource &apos;ulp_program.S&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="main/ulp/ulp_program.S" name="ulp_program_high.S" stamp="1738701541868" updateReferences="true"/>
+</session>

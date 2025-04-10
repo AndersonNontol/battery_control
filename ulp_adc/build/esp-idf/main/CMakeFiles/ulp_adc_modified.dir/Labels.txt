@@ -1,0 +1,13 @@
+# Target labels
+ ulp_adc_modified
+# Source files and their labels
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/CMakeFiles/ulp_adc_modified
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/CMakeFiles/ulp_adc_modified.rule
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/CMakeFiles/ulp_adc_modified-complete.rule
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified-prefix/src/ulp_adc_modified-stamp/ulp_adc_modified-build.rule
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified-prefix/src/ulp_adc_modified-stamp/ulp_adc_modified-configure.rule
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified-prefix/src/ulp_adc_modified-stamp/ulp_adc_modified-download.rule
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified-prefix/src/ulp_adc_modified-stamp/ulp_adc_modified-install.rule
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified-prefix/src/ulp_adc_modified-stamp/ulp_adc_modified-mkdir.rule
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified-prefix/src/ulp_adc_modified-stamp/ulp_adc_modified-patch.rule
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified-prefix/src/ulp_adc_modified-stamp/ulp_adc_modified-update.rule

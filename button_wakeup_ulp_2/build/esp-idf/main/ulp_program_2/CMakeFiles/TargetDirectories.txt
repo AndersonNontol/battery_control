@@ -1,0 +1,5 @@
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/CMakeFiles/ulp_program_2.dir
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/CMakeFiles/ld_script.dir
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/CMakeFiles/build.dir
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/CMakeFiles/edit_cache.dir
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,25 @@
+# ninja log v6
+721	884	7654880430218454	C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/ulp_program_2.h	66ccb2f818b84a6
+7	157	7654880422638717	ulp_fsm.ld	b7621597c5407155
+7	157	7654880422638717	C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/ulp_fsm.ld	b7621597c5407155
+535	641	7654880427814878	C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/ulp_program_2.bin	9140e5a293668663
+170	374	7654880424902662	ulp_program_2.ulp.S	ae9229516cde9116
+170	374	7654880424902662	C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/ulp_program_2.ulp.S	ae9229516cde9116
+375	408	7654880425481113	CMakeFiles/ulp_program_2.dir/ulp_program_2.ulp.S.obj	185be8e8340e6a51
+409	513	7654880425820206	ulp_program_2.elf	aee4a659dfd800be
+535	641	7654880427814878	ulp_program_2.bin	9140e5a293668663
+526	721	7654880428642661	ulp_program_2.sym	d58b4950afa7ca59
+526	721	7654880428642661	C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/ulp_program_2.sym	d58b4950afa7ca59
+721	884	7654880430218454	ulp_program_2.ld	66ccb2f818b84a6
+721	884	7654880430218454	ulp_program_2.h	66ccb2f818b84a6
+721	884	7654880430218454	C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/ulp_program_2.ld	66ccb2f818b84a6
+3	55	7654881960757218	ulp_fsm.ld	b7621597c5407155
+3	55	7654881960757218	C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/ulp_fsm.ld	b7621597c5407155
+61	87	7654881961106274	ulp_program_2.bin	9140e5a293668663
+61	87	7654881961106274	C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/ulp_program_2.bin	9140e5a293668663
+55	94	7654881961166115	ulp_program_2.sym	d58b4950afa7ca59
+55	94	7654881961166115	C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/ulp_program_2.sym	d58b4950afa7ca59
+94	265	7654881962003872	ulp_program_2.ld	5af0b7c0b8a24dee
+94	265	7654881962003872	ulp_program_2.h	5af0b7c0b8a24dee
+94	265	7654881962003872	C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/ulp_program_2.ld	5af0b7c0b8a24dee
+94	265	7654881962003872	C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2/ulp_program_2.h	5af0b7c0b8a24dee

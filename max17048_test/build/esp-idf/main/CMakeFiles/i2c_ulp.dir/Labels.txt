@@ -1,0 +1,13 @@
+# Target labels
+ i2c_ulp
+# Source files and their labels
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/CMakeFiles/i2c_ulp
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/CMakeFiles/i2c_ulp.rule
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/CMakeFiles/i2c_ulp-complete.rule
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp-prefix/src/i2c_ulp-stamp/i2c_ulp-build.rule
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp-prefix/src/i2c_ulp-stamp/i2c_ulp-configure.rule
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp-prefix/src/i2c_ulp-stamp/i2c_ulp-download.rule
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp-prefix/src/i2c_ulp-stamp/i2c_ulp-install.rule
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp-prefix/src/i2c_ulp-stamp/i2c_ulp-mkdir.rule
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp-prefix/src/i2c_ulp-stamp/i2c_ulp-patch.rule
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp-prefix/src/i2c_ulp-stamp/i2c_ulp-update.rule

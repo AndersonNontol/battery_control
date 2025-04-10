@@ -1,0 +1,77 @@
+#include "driver/gpio.h"
+#include "esp_err.h"
+#include "esp_sleep.h"
+#include "freertos/idf_additions.h"
+#include "soc/gpio_num.h"
+#include "ulp_common_defs.h"
+#include "ulp_fsm_common.h"
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
+
+#include "ulp_program_2.h"
+
+/*	################################# IMPORTANT #######################################
+	This program is based on the main.c file that belongs to the button_wakeup_ulp project
+	The difference lies in the wake up source. Now it will be used the external wake up source. 
+	###################################################################################	
+
+	When the device is just connected and after a deep sleep, the device waits for certain time before 
+	going to deep sleep. The device wakes up only after the button GPIO14 is pushed.
+	
+	When the program first starts it will stay asleep for 5 seconds, then it will go to deep sleep until
+	the button is pressed. After the button is pressed it will repeat its  ....
+	 
+*/
+
+/*	################################ RESULT #####################################
+	(04/04/2025) This program works just fine. 
+*/
+
+const gpio_num_t BUTTON_PIN = GPIO_NUM_14; 
+
+extern const uint8_t ulp_ulp_program_2_bin_start[] asm("_binary_ulp_program_2_bin_start");
+extern const uint8_t ulp_ulp_program_2_bin_end[] asm("_binary_ulp_program_2_bin_end");
+
+void app_main(void)
+{
+	vTaskDelay(pdMS_TO_TICKS(1000)); 
+	
+	sleep(5);
+	
+	// The device is asleep
+	esp_sleep_wakeup_cause_t cause = esp_sleep_get_wakeup_cause();
+	if(cause != ESP_SLEEP_WAKEUP_EXT0){
+		printf("Not extern wake up \n");
+		printf("The program will be loaded\n");
+		esp_err_t err1 = ulp_load_binary(0, ulp_ulp_program_2_bin_start, (ulp_ulp_program_2_bin_end - ulp_ulp_program_2_bin_start)/sizeof(uint32_t));
+		ESP_ERROR_CHECK(err1);
+	}
+	
+	else{
+		printf("An external source was the reason for wake up\n");
+	}
+	
+	// ################ CONFIGURATION FOR THE GPIO ################### //
+	gpio_set_direction(BUTTON_PIN, GPIO_MODE_INPUT);
+	gpio_set_pull_mode(BUTTON_PIN, GPIO_PULLDOWN_ONLY);
+	
+	// ############## CONFIGURATIONS FINISHED ####################### //
+	
+	/* This part belongs to the program main.c from button_wakeup_ulp project
+	esp_err_t err3 = ulp_set_wakeup_period(0, 2000);
+	ESP_ERROR_CHECK(err3);
+	
+	printf("Going to sleep\n"); 
+	esp_err_t err2 = esp_sleep_enable_ulp_wakeup();
+	ESP_ERROR_CHECK(err2);
+	
+	*/
+	esp_err_t err3 = esp_sleep_enable_ext0_wakeup(BUTTON_PIN, 1);
+	ESP_ERROR_CHECK(err3);
+	
+	esp_err_t err4 = ulp_run(&ulp_entry - RTC_SLOW_MEM);
+	ESP_ERROR_CHECK(err4);
+	
+	esp_deep_sleep_start();
+}

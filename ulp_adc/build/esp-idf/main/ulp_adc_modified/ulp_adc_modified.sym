@@ -1,0 +1,7 @@
+entry T 0 
+exit T 54 
+high_thr B 74 
+last_result B 7c 
+low_thr B 70 
+sample_counter B 78 
+wake_up T 58 

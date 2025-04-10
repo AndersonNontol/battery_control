@@ -1,0 +1,19 @@
+# ninja log v6
+6	70	7600583894838765	ulp_fsm.ld	5455e0ce922b6b70
+225	265	7600583896833439	ulp_main.bin	4e0cc9305556d020
+6	70	7600583894838765	C:/Users/Usuario/workspace/deep_sleep_example/build/esp-idf/main/ulp_main/ulp_fsm.ld	5455e0ce922b6b70
+70	143	7600583895576795	C:/Users/Usuario/workspace/deep_sleep_example/build/esp-idf/main/ulp_main/main.ulp.S	127b1067077b025
+70	143	7600583895576795	main.ulp.S	127b1067077b025
+143	165	7600583895656580	CMakeFiles/ulp_main.dir/main.ulp.S.obj	57a52822d812fff3
+166	217	7600583895875998	ulp_main.elf	d6ae1411f3705af0
+225	265	7600583896833439	C:/Users/Usuario/workspace/deep_sleep_example/build/esp-idf/main/ulp_main/ulp_main.bin	4e0cc9305556d020
+218	276	7600583896943139	ulp_main.sym	5910c25c04d14c1b
+218	276	7600583896943139	C:/Users/Usuario/workspace/deep_sleep_example/build/esp-idf/main/ulp_main/ulp_main.sym	5910c25c04d14c1b
+276	374	7600583897850720	ulp_main.ld	952a73379f75a011
+276	374	7600583897850720	ulp_main.h	952a73379f75a011
+276	374	7600583897850720	C:/Users/Usuario/workspace/deep_sleep_example/build/esp-idf/main/ulp_main/ulp_main.ld	952a73379f75a011
+276	374	7600583897850720	C:/Users/Usuario/workspace/deep_sleep_example/build/esp-idf/main/ulp_main/ulp_main.h	952a73379f75a011
+3	71	7640360660506489	ulp_main.ld	28220a65320e82e1
+3	71	7640360660506489	ulp_main.h	28220a65320e82e1
+3	71	7640360660506489	C:/Users/Usuario/workspace/deep_sleep_example/build/esp-idf/main/ulp_main/ulp_main.ld	28220a65320e82e1
+3	71	7640360660506489	C:/Users/Usuario/workspace/deep_sleep_example/build/esp-idf/main/ulp_main/ulp_main.h	28220a65320e82e1

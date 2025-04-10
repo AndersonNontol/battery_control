@@ -1,0 +1,25 @@
+# ninja log v6
+4	52	7654192338543133	ulp_fsm.ld	90d9b73572f08951
+49	105	7654190068607235	ulp_program.ulp.S	abe8caf49ad3e5e8
+4	52	7654192338543133	C:/Users/Usuario/workspace/button_wakeup_ulp/build/esp-idf/main/ulp_program/ulp_fsm.ld	90d9b73572f08951
+105	116	7654190068667070	CMakeFiles/ulp_program.dir/ulp_program.ulp.S.obj	3ead072d3facf31b
+49	105	7654190068607235	C:/Users/Usuario/workspace/button_wakeup_ulp/build/esp-idf/main/ulp_program/ulp_program.ulp.S	abe8caf49ad3e5e8
+117	142	7654190068776776	ulp_program.elf	56a71da10c7c1ec8
+58	88	7654192338922127	ulp_program.bin	8d26559c9d0f908
+58	88	7654192338922127	C:/Users/Usuario/workspace/button_wakeup_ulp/build/esp-idf/main/ulp_program/ulp_program.bin	8d26559c9d0f908
+52	183	7654192338991935	ulp_program.sym	dbd596ba7823c065
+52	183	7654192338991935	C:/Users/Usuario/workspace/button_wakeup_ulp/build/esp-idf/main/ulp_program/ulp_program.sym	dbd596ba7823c065
+183	428	7654192341969062	ulp_program.ld	94240fe852756ab6
+183	428	7654192341969062	ulp_program.h	94240fe852756ab6
+183	428	7654192341969062	C:/Users/Usuario/workspace/button_wakeup_ulp/build/esp-idf/main/ulp_program/ulp_program.h	94240fe852756ab6
+183	428	7654192341969062	C:/Users/Usuario/workspace/button_wakeup_ulp/build/esp-idf/main/ulp_program/ulp_program.ld	94240fe852756ab6
+2	52	7654203672371005	ulp_fsm.ld	90d9b73572f08951
+2	52	7654203672371005	C:/Users/Usuario/workspace/button_wakeup_ulp/build/esp-idf/main/ulp_program/ulp_fsm.ld	90d9b73572f08951
+53	181	7654203672919530	ulp_program.sym	dbd596ba7823c065
+53	181	7654203672919530	C:/Users/Usuario/workspace/button_wakeup_ulp/build/esp-idf/main/ulp_program/ulp_program.sym	dbd596ba7823c065
+59	189	7654203673577766	ulp_program.bin	8d26559c9d0f908
+59	189	7654203673577766	C:/Users/Usuario/workspace/button_wakeup_ulp/build/esp-idf/main/ulp_program/ulp_program.bin	8d26559c9d0f908
+181	366	7654203675283205	ulp_program.ld	94240fe852756ab6
+181	366	7654203675283205	ulp_program.h	94240fe852756ab6
+181	366	7654203675283205	C:/Users/Usuario/workspace/button_wakeup_ulp/build/esp-idf/main/ulp_program/ulp_program.ld	94240fe852756ab6
+181	366	7654203675283205	C:/Users/Usuario/workspace/button_wakeup_ulp/build/esp-idf/main/ulp_program/ulp_program.h	94240fe852756ab6

@@ -1,0 +1,13 @@
+# Target labels
+ ulp_program_2
+# Source files and their labels
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/CMakeFiles/ulp_program_2
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/CMakeFiles/ulp_program_2.rule
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/CMakeFiles/ulp_program_2-complete.rule
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-build.rule
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-configure.rule
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-download.rule
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-install.rule
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-mkdir.rule
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-patch.rule
+C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-update.rule

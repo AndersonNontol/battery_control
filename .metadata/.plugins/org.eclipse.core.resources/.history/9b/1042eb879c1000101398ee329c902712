@@ -1,0 +1,26 @@
+
+
+#include "soc/rtc_cntl_reg.h"
+#include "soc/rtc_io_reg.h"
+#include "soc/soc_ulp.h"
+
+/*	The GPIO 14  is the input pin that will be used to simulate a button. It can be configured to pull
+	or pull down.	I will configure this pin to pull down. So by default it will have 0V.
+	If the button is pressed the input will measure 3.3 V. The voltage used as a 3.3 V source will be
+	supplied from the ESP32 itself.
+
+	I will read the information on the button at regular intervals.
+	If the logic level stays on 0V then the ESP32 will not wake up
+	If the voltage ever rises to 5V (that means that the button was pressed) the ESP32 will go to active
+*/
+
+	.bss
+
+	.text
+	// GPIO14 = RTCIO016 = BIT 30
+	.set button_pin, 30
+
+	.global entry
+entry:
+
+	READ

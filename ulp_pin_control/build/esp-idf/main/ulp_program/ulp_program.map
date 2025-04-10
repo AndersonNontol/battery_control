@@ -1,0 +1,38 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x0000000000000000 0x0000000000000200 rw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.text           0x0000000000000000        0x8 load address 0x000000000000000c
+ *(.text)
+ .text          0x0000000000000000        0x4 CMakeFiles/ulp_program.dir/ulp_program_high.ulp.S.obj
+                0x0000000000000000                high_entry
+ .text          0x0000000000000004        0x4 CMakeFiles/ulp_program.dir/ulp_program_low.ulp.S.obj
+                0x0000000000000004                low_entry
+
+.data           0x0000000000000008        0x0 load address 0x0000000000000014
+                0x0000000000000008                . = ALIGN (0x4)
+ *(.data)
+ .data          0x0000000000000008        0x0 CMakeFiles/ulp_program.dir/ulp_program_high.ulp.S.obj
+ .data          0x0000000000000008        0x0 CMakeFiles/ulp_program.dir/ulp_program_low.ulp.S.obj
+
+.bss            0x0000000000000008        0x0 load address 0x0000000000000014
+                0x0000000000000008                . = ALIGN (0x4)
+ *(.bss)
+ .bss           0x0000000000000008        0x0 CMakeFiles/ulp_program.dir/ulp_program_high.ulp.S.obj
+ .bss           0x0000000000000008        0x0 CMakeFiles/ulp_program.dir/ulp_program_low.ulp.S.obj
+
+.header         0x0000000000000008        0xc load address 0x0000000000000000
+                0x0000000000000008        0x4 LONG 0x706c75
+                0x000000000000000c        0x2 SHORT 0xc LOADADDR (.text)
+                0x000000000000000e        0x2 SHORT 0x8 SIZEOF (.text)
+                0x0000000000000010        0x2 SHORT 0x0 SIZEOF (.data)
+                0x0000000000000012        0x2 SHORT 0x0 SIZEOF (.bss)
+LOAD CMakeFiles/ulp_program.dir/ulp_program_high.ulp.S.obj
+LOAD CMakeFiles/ulp_program.dir/ulp_program_low.ulp.S.obj
+OUTPUT(ulp_program.elf elf32-esp32ulp)

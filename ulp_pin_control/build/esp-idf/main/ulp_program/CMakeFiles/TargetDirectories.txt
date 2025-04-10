@@ -1,0 +1,5 @@
+C:/Users/Usuario/workspace/ulp_pin_control/build/esp-idf/main/ulp_program/CMakeFiles/ulp_program.dir
+C:/Users/Usuario/workspace/ulp_pin_control/build/esp-idf/main/ulp_program/CMakeFiles/ld_script.dir
+C:/Users/Usuario/workspace/ulp_pin_control/build/esp-idf/main/ulp_program/CMakeFiles/build.dir
+C:/Users/Usuario/workspace/ulp_pin_control/build/esp-idf/main/ulp_program/CMakeFiles/edit_cache.dir
+C:/Users/Usuario/workspace/ulp_pin_control/build/esp-idf/main/ulp_program/CMakeFiles/rebuild_cache.dir

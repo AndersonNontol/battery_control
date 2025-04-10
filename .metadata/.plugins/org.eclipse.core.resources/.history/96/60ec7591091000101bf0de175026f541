@@ -1,0 +1,18 @@
+
+
+#include "soc/rtc_cntl_reg.h"
+#include "soc/rtc_io_reg.h"
+#include "soc/soc_ulp.h"
+
+/*	The GPIO 0 is the input that will be measured. It is in pull up state by default
+	It will start entering to deep sleep
+	I will read the information on the button at regular intervals.
+	If the logic level stays on 5V then the ESP32 will not wake up
+	If the voltage ever drops to 0V, then
+*/
+
+	.bss
+
+	.text
+	.global entry
+entry:

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/CMakeFiles/example_ulp"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/CMakeFiles/example_ulp.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/CMakeFiles/example_ulp-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-build.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-download.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-install.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"example_ulp"
+		],
+		"name" : "example_ulp"
+	}
+}

@@ -1,0 +1,50 @@
+
+
+#include "soc/rtc_cntl_reg.h"
+#include "soc/rtc_io_reg.h"
+#include "soc/soc_ulp.h"
+#include "example_config.h"
+
+
+	.bss
+
+	.global soc_percent
+soc_percent:	.long 0
+
+	.text
+	.global entry
+entry:
+	//
+	MOVE R1, soc_percent
+	JUMP configure
+
+measure:
+	// The address 0x04 is associated with SOC according datasheet
+	I2C_RD 0x04, 7, 0, 0
+	ST R0, R1, 0
+
+
+wake_up:
+	READ_RTC_FIELD(RTC_CNTL_LOW_POWER_ST_REG, RTC_CNTL_RDY_FOR_WAKEUP)
+	AND R0, R0, 1
+	JUMP measure, eq
+	WAKE
+	HALT
+
+	.global configure
+configure:
+	WRITE_RTC_REG(RTC_I2C_SCL_LOW_PERIOD_REG, RTC_I2C_SCL_LOW_PERIOD_S, RTC_I2C_SCL_LOW_PERIOD_M, 40);
+    WRITE_RTC_REG(RTC_I2C_SCL_HIGH_PERIOD_REG, RTC_I2C_SCL_HIGH_PERIOD_S, RTC_I2C_SCL_HIGH_PERIOD_M, 40);
+
+    WRITE_RTC_REG(RTC_I2C_SDA_DUTY_REG, RTC_I2C_SDA_DUTY_S, RTC_I2C_SDA_DUTY_M, 16);
+
+    WRITE_RTC_REG(RTC_I2C_SCL_START_PERIOD_REG, RTC_I2C_SCL_START_PERIOD_S, RTC_I2C_SCL_START_PERIOD_M, 30);
+    WRITE_RTC_REG(RTC_I2C_SCL_STOP_PERIOD_REG, RTC_I2C_SCL_STOP_PERIOD_S, RTC_I2C_SCL_STOP_PERIOD_M, 44);
+
+    WRITE_RTC_REG(RTC_I2C_TIMEOUT_REG, RTC_I2C_TIMEOUT_S, RTC_I2C_TIMEOUT_M, 10000);
+
+	WRITE_RTC_REG(RTC_I2C_CTRL_REG, RTC_I2C_MS_MODE_S, RTC_I2C_MS_MODE_M, 1);
+
+	WRITE_RTC_REG(SENS_SAR_SLAVE_ADDR1_REG, SENS_I2C_SLAVE_ADDR0_S, SENS_I2C_SLAVE_ADDR0_M, 0x36);
+
+	JUMP measure

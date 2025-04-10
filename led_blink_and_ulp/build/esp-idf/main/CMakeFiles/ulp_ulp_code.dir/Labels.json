@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/CMakeFiles/ulp_ulp_code"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/CMakeFiles/ulp_ulp_code.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/CMakeFiles/ulp_ulp_code-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code-prefix/src/ulp_ulp_code-stamp/ulp_ulp_code-build.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code-prefix/src/ulp_ulp_code-stamp/ulp_ulp_code-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code-prefix/src/ulp_ulp_code-stamp/ulp_ulp_code-download.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code-prefix/src/ulp_ulp_code-stamp/ulp_ulp_code-install.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code-prefix/src/ulp_ulp_code-stamp/ulp_ulp_code-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code-prefix/src/ulp_ulp_code-stamp/ulp_ulp_code-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code-prefix/src/ulp_ulp_code-stamp/ulp_ulp_code-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ulp_ulp_code"
+		],
+		"name" : "ulp_ulp_code"
+	}
+}

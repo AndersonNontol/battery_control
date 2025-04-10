@@ -1,0 +1,23 @@
+                             Memory Type Usage Summary                              
++----------------------------------------------------------------------------------+
+| Memory Type/Section   | Used [bytes] | Used [%] | Remain [bytes] | Total [bytes] |
+|-----------------------+--------------+----------+----------------+---------------|
+| Flash Code            |        81698 |     2.44 |        3260606 |       3342304 |
+|    .text              |        81698 |     2.44 |                |               |
+| IRAM                  |        56403 |    43.03 |          74669 |        131072 |
+|    .text              |        55375 |    42.25 |                |               |
+|    .vectors           |         1027 |     0.78 |                |               |
+| Flash Data            |        41036 |     0.98 |        4153236 |       4194272 |
+|    .rodata            |        40780 |     0.97 |                |               |
+|    .appdesc           |          256 |     0.01 |                |               |
+| DRAM                  |        11332 |     6.27 |         169404 |        180736 |
+|    .data              |         9068 |     5.02 |                |               |
+|    .bss               |         2264 |     1.25 |                |               |
+| RTC FAST              |          127 |     1.55 |           8065 |          8192 |
+|    .text              |           99 |     1.21 |                |               |
+|    .force_fast        |           28 |     0.34 |                |               |
+| RTC SLOW              |           24 |     0.31 |           7656 |          7680 |
+|    .rtc_slow_reserved |           24 |     0.31 |                |               |
++----------------------------------------------------------------------------------+
+C:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.4/\components\partition_table\gen_esp32part.py C:\Users\Usuario\workspace\led_blink_and_ulp\build\partition_table\partition-table.bin
+Total time taken to build the project: 30,671 ms

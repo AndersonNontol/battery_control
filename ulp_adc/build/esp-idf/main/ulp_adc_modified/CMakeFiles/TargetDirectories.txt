@@ -1,0 +1,5 @@
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified/CMakeFiles/ulp_adc_modified.dir
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified/CMakeFiles/ld_script.dir
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified/CMakeFiles/build.dir
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified/CMakeFiles/edit_cache.dir
+C:/Users/Usuario/workspace/ulp_adc/build/esp-idf/main/ulp_adc_modified/CMakeFiles/rebuild_cache.dir

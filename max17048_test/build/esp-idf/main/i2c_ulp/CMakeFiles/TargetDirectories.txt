@@ -1,0 +1,5 @@
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/CMakeFiles/i2c_ulp.dir
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/CMakeFiles/ld_script.dir
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/CMakeFiles/build.dir
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/CMakeFiles/edit_cache.dir
+C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/CMakeFiles/rebuild_cache.dir

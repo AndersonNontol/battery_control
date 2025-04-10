@@ -1,0 +1,23 @@
+                             Memory Type Usage Summary                              
++----------------------------------------------------------------------------------+
+| Memory Type/Section   | Used [bytes] | Used [%] | Remain [bytes] | Total [bytes] |
+|-----------------------+--------------+----------+----------------+---------------|
+| Flash Code            |        84354 |     2.52 |        3257950 |       3342304 |
+|    .text              |        84354 |     2.52 |                |               |
+| IRAM                  |        56435 |    43.06 |          74637 |        131072 |
+|    .text              |        55407 |    42.27 |                |               |
+|    .vectors           |         1027 |     0.78 |                |               |
+| Flash Data            |        42124 |      1.0 |        4152148 |       4194272 |
+|    .rodata            |        41868 |      1.0 |                |               |
+|    .appdesc           |          256 |     0.01 |                |               |
+| DRAM                  |        11348 |     6.28 |         169388 |        180736 |
+|    .data              |         9084 |     5.03 |                |               |
+|    .bss               |         2264 |     1.25 |                |               |
+| RTC FAST              |          127 |     1.55 |           8065 |          8192 |
+|    .text              |           99 |     1.21 |                |               |
+|    .force_fast        |           28 |     0.34 |                |               |
+| RTC SLOW              |           24 |     0.31 |           7656 |          7680 |
+|    .rtc_slow_reserved |           24 |     0.31 |                |               |
++----------------------------------------------------------------------------------+
+C:\Espressif\python_env\idf5.4_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.4/\components\partition_table\gen_esp32part.py C:\Users\Usuario\workspace\deep_sleep_example\build\partition_table\partition-table.bin
+Total time taken to build the project: 405 ms

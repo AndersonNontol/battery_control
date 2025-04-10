@@ -1,0 +1,25 @@
+# ninja log v6
+6	174	7655067541006615	ulp_fsm.ld	2acedd528b27c0d4
+6	174	7655067541006615	C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/ulp_fsm.ld	2acedd528b27c0d4
+174	346	7655067542781869	i2c_ulp.ulp.S	e2f9fafe39671e1b
+174	346	7655067542781869	C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/i2c_ulp.ulp.S	e2f9fafe39671e1b
+347	374	7655067543350350	CMakeFiles/i2c_ulp.dir/i2c_ulp.ulp.S.obj	5b8d0b4872553f23
+567	691	7655067546571739	C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/i2c_ulp.bin	43bad3e2f6dbe76a
+375	555	7655067543629603	i2c_ulp.elf	f679f7cc0375d009
+567	691	7655067546571739	i2c_ulp.bin	43bad3e2f6dbe76a
+555	723	7655067546731312	i2c_ulp.sym	31aa227c481e357c
+555	723	7655067546731312	C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/i2c_ulp.sym	31aa227c481e357c
+724	927	7655067548536494	i2c_ulp.ld	d2d6382efbc18246
+724	927	7655067548536494	i2c_ulp.h	d2d6382efbc18246
+724	927	7655067548536494	C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/i2c_ulp.ld	d2d6382efbc18246
+724	927	7655067548536494	C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/i2c_ulp.h	d2d6382efbc18246
+6	159	7655716474210164	ulp_fsm.ld	2acedd528b27c0d4
+6	159	7655716474210164	C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/ulp_fsm.ld	2acedd528b27c0d4
+173	279	7655716475689736	i2c_ulp.bin	43bad3e2f6dbe76a
+173	279	7655716475689736	C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/i2c_ulp.bin	43bad3e2f6dbe76a
+160	332	7655716476074646	i2c_ulp.sym	31aa227c481e357c
+160	332	7655716476074646	C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/i2c_ulp.sym	31aa227c481e357c
+332	483	7655716477769005	i2c_ulp.ld	d2d6382efbc18246
+332	483	7655716477769005	i2c_ulp.h	d2d6382efbc18246
+332	483	7655716477769005	C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/i2c_ulp.ld	d2d6382efbc18246
+332	483	7655716477769005	C:/Users/Usuario/workspace/max17048_test/build/esp-idf/main/i2c_ulp/i2c_ulp.h	d2d6382efbc18246

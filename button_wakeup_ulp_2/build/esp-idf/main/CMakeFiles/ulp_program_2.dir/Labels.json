@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/CMakeFiles/ulp_program_2"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/CMakeFiles/ulp_program_2.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/CMakeFiles/ulp_program_2-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-build.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-download.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-install.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Usuario/workspace/button_wakeup_ulp_2/build/esp-idf/main/ulp_program_2-prefix/src/ulp_program_2-stamp/ulp_program_2-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ulp_program_2"
+		],
+		"name" : "ulp_program_2"
+	}
+}

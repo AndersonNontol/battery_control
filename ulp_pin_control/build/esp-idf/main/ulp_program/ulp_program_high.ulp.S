@@ -1,0 +1,8 @@
+       
+       
+       
+ .bss
+ .text
+ .global high_entry
+high_entry:
+ REG_WR ((((0x3ff48400 + 0x0)) - 0x3ff48000) / 4), ((26) + (1) - 1), (26), ((1) & 0xff)

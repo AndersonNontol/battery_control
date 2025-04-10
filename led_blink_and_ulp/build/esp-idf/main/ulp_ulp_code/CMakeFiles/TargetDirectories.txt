@@ -1,0 +1,5 @@
+C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code/CMakeFiles/ulp_ulp_code.dir
+C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code/CMakeFiles/ld_script.dir
+C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code/CMakeFiles/build.dir
+C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code/CMakeFiles/edit_cache.dir
+C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code/CMakeFiles/rebuild_cache.dir

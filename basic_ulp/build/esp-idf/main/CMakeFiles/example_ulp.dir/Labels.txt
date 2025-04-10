@@ -1,0 +1,13 @@
+# Target labels
+ example_ulp
+# Source files and their labels
+C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/CMakeFiles/example_ulp
+C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/CMakeFiles/example_ulp.rule
+C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/CMakeFiles/example_ulp-complete.rule
+C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-build.rule
+C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-configure.rule
+C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-download.rule
+C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-install.rule
+C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-mkdir.rule
+C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-patch.rule
+C:/Users/Usuario/workspace/basic_ulp/build/esp-idf/main/example_ulp-prefix/src/example_ulp-stamp/example_ulp-update.rule

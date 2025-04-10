@@ -1,0 +1,15 @@
+# ninja log v6
+5	59	7642011179688641	ulp_fsm.ld	bcf6f2df967905ef
+5	59	7642011179688641	C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code/ulp_fsm.ld	bcf6f2df967905ef
+59	120	7642011180297017	ulp_code.ulp.S	34902a8c44a9e19
+59	120	7642011180297017	C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code/ulp_code.ulp.S	34902a8c44a9e19
+120	131	7642011180366827	CMakeFiles/ulp_ulp_code.dir/ulp_code.ulp.S.obj	7beffa911ea6c0ee
+132	158	7642011180486507	ulp_ulp_code.elf	546b6612f92c6522
+164	193	7642011181064962	ulp_ulp_code.bin	47b6adeea31f2be1
+164	193	7642011181064962	C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code/ulp_ulp_code.bin	47b6adeea31f2be1
+158	200	7642011181124800	ulp_ulp_code.sym	a825e60d5bd63204
+158	200	7642011181124800	C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code/ulp_ulp_code.sym	a825e60d5bd63204
+201	286	7642011181942615	ulp_ulp_code.ld	2f7f5b864dea80cb
+201	286	7642011181942615	ulp_ulp_code.h	2f7f5b864dea80cb
+201	286	7642011181942615	C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code/ulp_ulp_code.ld	2f7f5b864dea80cb
+201	286	7642011181942615	C:/Users/Usuario/workspace/led_blink_and_ulp/build/esp-idf/main/ulp_ulp_code/ulp_ulp_code.h	2f7f5b864dea80cb

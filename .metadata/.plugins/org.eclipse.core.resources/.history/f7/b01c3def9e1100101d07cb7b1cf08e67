@@ -1,0 +1,89 @@
+#include "driver/i2c_master.h"
+#include "esp_err.h"
+#include "esp_sleep.h"
+#include "freertos/idf_additions.h"
+#include "freertos/projdefs.h"
+#include "hal/i2c_types.h"
+#include "soc/clk_tree_defs.h"
+#include "soc/gpio_num.h"
+#include "ulp_common.h"
+#include "ulp_common_defs.h"
+#include "ulp_fsm_common.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include <sys/unistd.h>
+#include <unistd.h>
+
+#include <driver/i2c.h>
+#include <esp_log.h>
+#include "i2c_ulp.h"
+#include "ulp/example_config.h"
+
+extern const uint8_t ulp_i2c_ulp_bin_start[] asm("_binary_i2c_ulp_bin_start");
+extern const uint8_t ulp_i2c_ulp_bin_end[] asm("_binary_i2c_ulp_bin_end");
+
+
+
+void app_main(void)
+{
+	
+	vTaskDelay(pdMS_TO_TICKS(1000));
+	
+	esp_sleep_wakeup_cause_t cause = esp_sleep_get_wakeup_cause();
+	if(cause != ESP_SLEEP_WAKEUP_TIMER){
+		printf("Not TIMER wakeup \n");
+		esp_err_t err1 = ulp_load_binary(0, ulp_i2c_ulp_bin_start, (ulp_i2c_ulp_bin_end - ulp_i2c_ulp_bin_start)/sizeof(uint32_t));
+		ESP_ERROR_CHECK(err1);
+	}
+	else{
+		printf("TIMER wakeup \n");
+		printf("The SOC for the battery is: %"PRIu32" percent\n", ulp_soc_percent);
+	}
+	
+	/*
+	// ################################ CONFIGURATION ###############################
+	i2c_master_bus_config_t i2c_mst_config = {
+	   .clk_source = I2C_CLK_SRC_DEFAULT,
+	   .i2c_port = I2C_NUM_0,
+	   .scl_io_num = GPIO_NUM_22,
+	   .sda_io_num = GPIO_NUM_21,
+	   .flags.enable_internal_pullup = true, 	   
+   };
+   
+   i2c_master_bus_handle_t bus_handle;
+   ESP_ERROR_CHECK(i2c_new_master_bus(&i2c_mst_config, &bus_handle));
+   
+   i2c_device_config_t dev_cfg = {
+	   .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+	   .device_address = 0x36,
+	   .scl_speed_hz = 100000,
+   };
+   
+   i2c_master_dev_handle_t dev_handle;
+   ESP_ERROR_CHECK(i2c_master_bus_add_device(bus_handle, &dev_cfg, &dev_handle));
+	
+	// ##############################################################################
+	sleep(2);
+	printf("Entering deep sleep \n\n");
+	*/
+	
+	/*
+	// Enabling wakeup if something happen
+	ESP_ERROR_CHECK(esp_sleep_enable_ulp_wakeup());
+	
+	// Configuring certain time for deep sleep
+	esp_err_t err2 = ulp_set_wakeup_period(0, 2000);
+	ESP_ERROR_CHECK(err2);
+	*/
+	
+	esp_err_t err2 = esp_sleep_enable_timer_wakeup(60*1000000);
+	ESP_ERROR_CHECK(err2);
+	
+	esp_err_t err3 = ulp_run(&ulp_entry - RTC_SLOW_MEM);
+	ESP_ERROR_CHECK(err3);
+	
+	// Entering to deep sleep
+	esp_deep_sleep_start();
+}
+

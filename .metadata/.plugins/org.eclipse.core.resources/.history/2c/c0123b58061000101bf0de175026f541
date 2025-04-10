@@ -1,0 +1,16 @@
+
+
+#include "soc/rtc_cntl_reg.h"
+#include "soc/rtc_io_reg.h"
+#include "soc/soc_ulp.h"
+
+/*	The GPIO 0 is the input that will be measured
+	I will read the information on the button at regular intervals.
+
+*/
+
+	.bss
+
+	.text
+	.global entry
+entry:

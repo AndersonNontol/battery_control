@@ -1,0 +1,27 @@
+
+#include "soc/rtc_cntl_reg.h"
+#include "soc/rtc_io_reg.h"
+#include "soc/soc_ulp.h"
+//#include "example_config.h"
+
+	.bss
+
+	// Lets define a global variable. It is possible to acces from main.c
+	.global example_variable
+example_variable: 	.long 0
+
+	.text
+	.global entry
+entry: // R1 = example_variable (Not completerly understood)
+	MOVE R1, example_variable
+	LD R2, R1, 0
+
+wake_up:
+	// Review if the device is ready to wake up
+	READ_RTC_FIELD(RTC_CNTL_LOW_POWER_ST_REG, RTC_CNTL_RDY_FOR_WAKEUP)
+	AND R0, R0, 1 		// 1 -> is ready, 0 -> isn't ready
+	ADD R2, R2, 1		// Used to count how many times the micro try to wake up
+	ST R2, R1, 0		// The previous line and this one were added for counting purposes
+	JUMP wake_up, eq	// If the device is not ready try wakeup again
+	WAKE				// If the device is ready then wake up
+	HALT

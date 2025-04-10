@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <unistd.h>
+
+/*	When the device is just connected and after a deep sleep, the device waits for certain time before 
+	going to deep sleep. The device wakes up only after the button GPIO 2 is pushed. 
+*/
+
+void app_main(void)
+{
+    while (true) {
+        printf("Hello from app_main!\n");
+        sleep(1);
+    }
+}
